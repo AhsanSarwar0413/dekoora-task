@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "Rolla";
+    src: url("../fonts/Rolla-Soft-Vintage-Typeface/WebFonts/rolla-webfont.woff2") format("woff2");
+}
+@font-face {
+    font-family:"Filson Pro";
+    src: url("../fonts/filson-pro/FilsonProRegular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Filson Pro";
+    src: url("../fonts/filson-pro/FilsonProLight.otf") format("opentype");
+    font-weight: 350;
+    font-style: normal;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.upper-footer {
+    background-color:#FFB3BE;
+}
+.footer-logo-listing {
+    display: flex;
+    padding: 80px 0px 0px 48px;
+}
+.upper-footer::after {
+    content: '';
+    flex: 1;
+}
+.footer-listing {
+    display: flex;
+    flex: 0 0 60%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-listing ul li {
+    list-style: none;
+    font-size: 14px;
+}
+.footer-listing ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 3;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-family: "Filson Pro", sans-serif;
+}
+.footer-listing ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-logo {
+    flex: 0 0 15%;
+}
+.footer-logo img {
+    width: 100px;
+}
+.footer-listing .footer-column h3 {
+    font-family: "Rolla", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.footer-social-rights {
+    padding: 60px 0px 60px 32px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Rolla', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    width: 73%;
+    align-items: center;
+}
+.footer-social-rights p{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.footer-social-rights .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.copyrights-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 38%;
+    padding-left: 8px;
+}
+.copyrights-section p span {
+    font-size: 16px;
+}
+.copyrights-section p, .footer-social-rights h4 {
+    margin: 0;
+    padding: 0;
+}
+.social-images {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.social-images a {
+    display: flex;
+    align-items: center;
+}
+.footer-social-rights .social-icons img {
+    max-width: 195px;
+    max-height: 35px;
+}
+.lower-foooter {
+    padding: 32px;
+}
+.lower-foooter .payment-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.lower-foooter .payment-icons #paypal {
+    max-width: 90px;
+}
+.lower-foooter .payment-icons #mastercard {
+    width: 41px;
+}
+.lower-foooter .payment-icons #visa {
+    max-width: 72px;
+}
+.lower-foooter .payment-icons #klarna {
+    max-width: 49px;
+}
+.lower-foooter .payment-icons #trusted {
+    width: 29px;
+}
+.lower-foooter .payment-icons #ups {
+    max-width: 22px;
+}
+.lower-foooter .payment-icons #gls {
+    max-width: 70px;
+}
+.lower-foooter .payment-icons #dhl {
+    max-width: 106px;
+}
+#mobile-only {
+    display: none;
+}
+.mobile-logo {
+    display: none;
+}
+.social-icons p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) {
+    .footer-listing {
+        flex: 1;
+    }
+    .footer-logo-listing {
+        gap: 8px;
+        padding: 16px 16px 0px 16px;
+    }
+    .footer-column {
+        flex: 0 0 50%;
+    }
+    .footer-listing .footer-column h3 {
+        font-size: 14px;
+    }
+    .footer-listing .footer-column ul li a {
+        font-size: 14px;
+    }
+    .copyrights-section {
+        flex: auto;
+        justify-content: space-evenly;
+    }
+    .lower-foooter .payment-icons {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    
+    }
+}
+@media only screen and (max-width: 767px) { 
+    .footer-social-rights {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 24px;
+        width: calc(100% - 32px);
+    }
+    .footer-social-rights .copyrights-section {
+        justify-content: start;
+        padding-left: 0;
+        gap: 8px;
+    }
+    .copyrights-section p span {
+        font-size: 12px;
+    }
+    #mobile-only {
+        display: inline;
+        margin-left: -4px;
+    }
+    .lower-foooter .payment-icons #paypal {
+        max-width: 75px;
+    }
+    .lower-foooter .payment-icons #mastercard {
+        width: 31px;
+    }
+    .lower-foooter .payment-icons #visa {
+        max-width: 60px;
+    }
+    .lower-foooter .payment-icons #klarna {
+        max-width: 40px;
+    }
+    .lower-foooter .payment-icons #trusted {
+        width: 25px;
+    }
+    .lower-foooter .payment-icons #ups {
+        max-width: 18px;
+    }
+    .lower-foooter .payment-icons #gls {
+        max-width: 60px;
+    }
+    .lower-foooter .payment-icons #dhl {
+        max-width: 85px;
+    }
+    .lower-foooter .payment-icons {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+}
+@media only screen and (max-width: 400px) {
+    .footer-logo{
+        display: none;
+    }
+    .footer-social-rights {
+        padding: 32px 0px 32px 24px;
+        width: 60%;
+    }
+    .footer-social-rights .social-icons {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: start;
+    }
+    .footer-listing {
+        flex: 0 0 73%;
+    }
+    .footer-listing > div {
+        display: none;
+    }
+    .footer-listing > div:first-child {
+    display: block;
+    }
+    .footer-listing > div:last-child {
+    display: block;
+    }
+    .footer-logo-listing {
+        padding: 24px 0px 0px 24px;
+    }
+    .footer-listing .footer-column ul li a {
+        font-size: 12px;
+    }
+    .footer-social-rights p {
+        font-size: 12px;
+    }
+    .mobile-logo { 
+        display: block;
+    }
+    .mobile-logo img {
+        width: 95px;
+    }
+    .footer-social-logo-container {
+        display: flex;
+        align-items: center;
+    }
+    .footer-social-rights .social-icons img {
+        max-width: 150px;
+    }
+    .footer-social-rights .social-icons {
+        gap: 4px;
+    }
+    .footer-social-rights .social-images {
+        gap: 14px;
+    }
+    .footer-social-rights .social-images img {
+        max-width: 27px;
+    }
+    #mastercard, #ups, #gls, #dhl {
+        display: none;
+    }
+    .lower-foooter .payment-icons {
+        grid-auto-flow: column;
+        padding:0;
+        grid-template-columns: none;
+    }
+    .lower-foooter {
+        padding: 16px 24px;
+    }
+    .lower-foooter .payment-icons #trusted {
+        min-width: 29px;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .lower-foooter .payment-icons #paypal {
+        max-width: 54px;
+    }
+    .lower-foooter .payment-icons #visa {
+        max-width: 46px;
+    }
+    .lower-foooter .payment-icons #klarna {
+        max-width: 30px;
+    }
+}
